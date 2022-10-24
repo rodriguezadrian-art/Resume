@@ -1,0 +1,208 @@
+body{
+    background-color: rgb(38, 108, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background:#fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(225,225,225,0.2);
+}
+.profileText .imgAd
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* adrian_R img */
+.profileText .imgAd img
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: rgb(18, 18, 18);
+    font-size: 1.53em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInformation
+{
+    padding-top: 40px;
+
+}
+.title
+{
+    color: rgb(14, 13, 13);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.linkIn
+{
+    text-decoration: underline;
+}
+.contactInformation ul
+{
+    position: relative;
+    top:5px;
+    left: 5px;
+}
+.contactInformation ul li
+{
+    position: relative;
+    list-style:none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInformation ul li .icon
+{
+    display: inline-block;
+    width: 20px;
+    font-size:16px;
+    color: rgb(94, 242, 80);
+}
+.contactInformation ul li span
+{
+    color:rgb(8, 8, 7);
+    font-weight: 300;
+}
+.educationInfo ul li span
+{
+    margin-bottom: 15px;
+    color:rgb(8, 8, 7);
+    font-weight: 300;
+}
+.educationInfo ul li .icon
+{
+    display: inline-block;
+    width:20px;
+   font-size: 16px;
+    color:orange;
+}
+ul
+{
+    list-style-type:none;
+}
+.container .left_side
+{
+    position: relative;
+    background: #53a697;
+    padding: 40px;
+
+}
+.container .right_side
+{
+    position: relative;
+    background: rgb(230, 228, 228);
+    padding: 40px;
+}
+.about
+{
+    margin-top: 50px;
+
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color:#003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color:#333;
+}
+.skill .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skill .box h4
+{
+    text-transform: uppercase;
+    color:rgb(13, 11, 11);
+    font-weight: 500;
+}
+.skill .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color:#3ea381;
+}
+.skill .box .percent div
+{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    background-color:rgb(61, 134, 76);
+}
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li
+{
+    list-style-type: none;
+    color: #53a697;
+    font-size: 500;
+    margin:10px 0;
+}
+.interest ul li fa
+{
+    color: #3ea381;
+    font-size: 18px;
+    width: 20px;
+}
+@media(max-width:1000px)
+{
+    .container
+    {
+        margin:10px;
+        
+    }
+}
